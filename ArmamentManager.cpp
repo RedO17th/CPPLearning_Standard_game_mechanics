@@ -12,7 +12,7 @@ namespace Armamentspace
 		_armaments.push_back(make_unique<Rifle>(Armament::ArmamentType::Rifle));
 	}
 
-	Armament* ArmamentManager::GetArmamentByType(Armament::ArmamentType type)
+	Armament* ArmamentManager::GetArmamentBy(Armament::ArmamentType type)
 	{
 		return GetArmament(type);
 	}

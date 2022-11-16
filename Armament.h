@@ -26,6 +26,8 @@ namespace Armamentspace
 
 		Armament(ArmamentType type);
 
+		virtual ~Armament() { }
+
 		virtual ArmamentType GetType();
 
 		void Use() override;

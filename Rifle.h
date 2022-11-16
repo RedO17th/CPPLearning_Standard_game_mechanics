@@ -12,6 +12,12 @@ namespace Armamentspace
 			Initilize();
 		}
 
+		~BaseMagazine()
+		{
+			_numberOfElements = 0;
+			_capacity = 0;
+		}
+
 		bool IsThereAmmo()
 		{
 			return _numberOfElements > 0;
@@ -32,7 +38,7 @@ namespace Armamentspace
 		int _numberOfElements = 0;
 
 		//Test
-		const int _capacity = 3;
+		int _capacity = 3;
 
 		void Initilize()
 		{
@@ -41,7 +47,8 @@ namespace Armamentspace
 
 	};
 
-	
+
+
 	class Rifle : public Armament
 	{
 
@@ -49,6 +56,12 @@ namespace Armamentspace
 		Rifle(Armament::ArmamentType type) : Armament(type)
 		{
 			_buletsMagazine = new BaseMagazine();
+		}
+
+		~Rifle() override
+		{
+			delete _buletsMagazine;
+			_buletsMagazine = nullptr;
 		}
 
 		void Use() override

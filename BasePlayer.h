@@ -9,12 +9,18 @@ class BasePlayer
 public: 
 	BasePlayer();
 
-	void SetArmament(IArmament* armament);
+	~BasePlayer()
+	{
+		_currentArma_ptr.reset();
+	}
+
+	void SetArmament(Armament* armament);
 
 	void UseArmament();
 
 protected:
-	IArmament *_currentArmament;
+	
+	shared_ptr<Armament*> _currentArma_ptr;
 
 };
 

@@ -6,7 +6,7 @@ namespace Armamentspace
 	Armament::Armament(ArmamentType type)
 	{
 		_type = type;
-	};
+	}
 
 	Armament::ArmamentType Armament::GetType()
 	{

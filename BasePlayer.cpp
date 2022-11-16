@@ -2,12 +2,12 @@
 
 BasePlayer::BasePlayer() {}
 
-void BasePlayer::SetArmament(IArmament* armament)
+void BasePlayer::SetArmament(Armament* armament)
 {
-	_currentArmament = armament;
+	_currentArma_ptr = make_shared<Armament*>(armament);
 };
 
 void BasePlayer::UseArmament()
 {
-	_currentArmament->Use();
+	(*_currentArma_ptr)->Use();
 };

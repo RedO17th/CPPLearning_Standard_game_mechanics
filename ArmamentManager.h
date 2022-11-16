@@ -14,7 +14,9 @@ namespace Armamentspace
 
 		ArmamentManager();
 
-		Armament* GetArmamentByType(Armament::ArmamentType type);
+		~ArmamentManager() { }
+
+		Armament* GetArmamentBy(Armament::ArmamentType type);
 
 	private:
 
