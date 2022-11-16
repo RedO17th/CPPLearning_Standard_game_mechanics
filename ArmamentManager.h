@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-#include "Armament.h"
+ #include "Armament.h"
 
 using namespace std;
 

@@ -2,8 +2,8 @@
 
 namespace Armamentspace
 {
-	void Rifle::Use()
-	{
-		cout << "Rifle.cpp - Use" << endl;
-	}
+	//void Rifle::Use()
+	//{
+	//	cout << "Rifle.cpp - Use" << endl;
+	//}
 };

@@ -7,10 +7,7 @@ namespace Armamentspace
 	class Knife : public Armament
 	{
 	public:
-		Knife(Armament::ArmamentType type) : Armament(type)
-		{
-			cout << "Knife()" << endl;
-		}
+		Knife(Armament::ArmamentType type) : Armament(type) {}
 
 		void Use() override;
 	};	

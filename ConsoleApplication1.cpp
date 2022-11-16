@@ -78,6 +78,10 @@ int main()
 
     plPtr->SetArmament(arma);
     plPtr->UseArmament();
+    plPtr->UseArmament();
+    plPtr->UseArmament();
+    plPtr->UseArmament();
+    plPtr->UseArmament();
 
     return 0;
 }
