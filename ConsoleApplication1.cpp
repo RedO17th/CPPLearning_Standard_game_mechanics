@@ -16,6 +16,10 @@ int main()
 
     pl_ptr->SetArmament(arma);
     pl_ptr->UseArmament();
+    pl_ptr->UseArmament();
+    pl_ptr->UseArmament();
+    pl_ptr->UseArmament();
+    pl_ptr->UseArmament();
 
     delete aManager_ptr;
     aManager_ptr = nullptr;

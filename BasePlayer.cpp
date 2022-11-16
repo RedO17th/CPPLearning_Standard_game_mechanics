@@ -10,4 +10,4 @@ void BasePlayer::SetArmament(Armament* armament)
 void BasePlayer::UseArmament()
 {
 	(*_currentArma_ptr)->Use();
-};
+}

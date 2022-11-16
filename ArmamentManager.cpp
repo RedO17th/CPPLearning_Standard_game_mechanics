@@ -1,7 +1,7 @@
 #include <list>
 #include "ArmamentManager.h"
 #include "Knife.h"
-#include "Rifle.h"
+#include "BaseRifle.h"
 
 namespace Armamentspace
 {
@@ -9,7 +9,7 @@ namespace Armamentspace
 	{
 		_armaments.push_back(make_unique<Armament>(Armament::ArmamentType::None));
 		_armaments.push_back(make_unique<Knife>(Armament::ArmamentType::Knife));
-		_armaments.push_back(make_unique<Rifle>(Armament::ArmamentType::Rifle));
+		_armaments.push_back(make_unique<BaseRifle>(Armament::ArmamentType::Rifle));
 	}
 
 	Armament* ArmamentManager::GetArmamentBy(Armament::ArmamentType type)

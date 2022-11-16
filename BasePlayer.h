@@ -22,6 +22,7 @@ protected:
 	
 	shared_ptr<Armament*> _currentArma_ptr;
 
+
 };
 
 

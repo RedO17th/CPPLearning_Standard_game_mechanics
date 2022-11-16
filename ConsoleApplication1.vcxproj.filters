@@ -30,7 +30,7 @@
     <ClCompile Include="Knife.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Rifle.cpp">
+    <ClCompile Include="BaseRifle.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="BaseMagazine.cpp">
@@ -100,7 +100,7 @@
     <ClInclude Include="Knife.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Rifle.h">
+    <ClInclude Include="BaseRifle.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="BaseMagazine.h">

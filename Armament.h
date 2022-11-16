@@ -11,6 +11,7 @@ namespace Armamentspace
 		virtual void Use() = 0;
 	};
 
+	//Сущность "Вооружение"
 	class Armament : public IArmament
 	{
 	public:

@@ -8,17 +8,17 @@ using namespace std;
 
 namespace Armamentspace
 {
-	class Bullet
+	class BaseBullet
 	{
 	public:
-		Bullet(int id)
+		BaseBullet(int id)
 		{
 			ID = id;
 		}
 
-		int GetID()
+		~BaseBullet()
 		{
-			return ID;
+			ID = 0;
 		}
 
 		void Launch()
@@ -33,63 +33,27 @@ namespace Armamentspace
 	class BaseMagazine
 	{
 	public:
-		BaseMagazine()
-		{
-			Initilize();
-		}
+		BaseMagazine(int capacity);
 
-		~BaseMagazine()
-		{
-			_numberOfElements = 0;
-			_capacity = 0;
-		}
+		~BaseMagazine();
 
-		bool IsThereAmmo()
-		{
-			return _numberOfElements > 0;
-		}
+		virtual bool IsThereAmmo();
 
-		void RemoveBullet()
-		{
-			if (_numberOfElements > 0)
-			{
-				--_numberOfElements;
+		virtual void RemoveBullet();
 
-				ImitationOfBulletShot();
-			}
-		}
+		void Reload();
 
-		void Reload()
-		{
-			_numberOfElements = _capacity;
-		}
+	protected:
+		int _capacity = 0;
+		int _freeBulletsNumber = 0;
 
-	private:
-		//Test
-		int _capacity = 3;
-		int _numberOfElements = 0;
+		queue<BaseBullet, list<BaseBullet>> _bullets;
 
-		queue<Bullet, list<Bullet>> _bullets;
+		virtual void InitializeBullets();
 
-		void Initilize()
-		{
-			_numberOfElements = _capacity;
+		virtual void ImitationOfBulletShot();
 
-			for (int i = 0; i < _capacity; i++)
-			{
-				_bullets.push(Bullet(i));
-			}
-		}
-
-		void ImitationOfBulletShot()
-		{
-			Bullet bullet = _bullets.front();
-			_bullets.pop();
-
-			bullet.Launch();
-
-			_bullets.push(bullet);
-		}
+		virtual void Clear();
 
 	};
 };

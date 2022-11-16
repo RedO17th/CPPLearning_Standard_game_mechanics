@@ -145,7 +145,7 @@
     <ClCompile Include="BasePlayer.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="Knife.cpp" />
-    <ClCompile Include="Rifle.cpp" />
+    <ClCompile Include="BaseRifle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\atomic" />
@@ -201,7 +201,7 @@
     <ClInclude Include="BasePlayer.h" />
     <ClInclude Include="Knife.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Rifle.h" />
+    <ClInclude Include="BaseRifle.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ConsoleApplication1.rc" />
