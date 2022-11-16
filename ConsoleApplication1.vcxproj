@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Armament.cpp" />
     <ClCompile Include="ArmamentManager.cpp" />
+    <ClCompile Include="BaseMagazine.cpp" />
     <ClCompile Include="BasePlayer.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="Knife.cpp" />
@@ -196,6 +197,7 @@
   <ItemGroup>
     <ClInclude Include="Armament.h" />
     <ClInclude Include="ArmamentManager.h" />
+    <ClInclude Include="BaseMagazine.h" />
     <ClInclude Include="BasePlayer.h" />
     <ClInclude Include="Knife.h" />
     <ClInclude Include="resource.h" />
